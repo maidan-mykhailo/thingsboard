@@ -26,7 +26,7 @@
     flex: 1;
   }
   mat-sidenav.tb-site-sidenav {
-    width: 250px;
+    width: 260px;
     @media (max-width:456px) {
       width: calc(100% - 56px);
     }
@@ -41,13 +41,13 @@
         z-index: 2;
         flex-shrink: 0;
         white-space: nowrap;
-        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        border-bottom: 1px solid #FFFFFF1F;
         & > div {
           height: 64px;
           .tb-logo-title {
             width: auto;
             max-width: 100%;
-            height: 36px;
+            height: 56px;
             max-height: 100%;
             margin: auto;
           }
