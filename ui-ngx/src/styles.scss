@@ -643,6 +643,19 @@ mat-icon {
     .mat-mdc-select-value, .mat-mdc-select-arrow, .mat-mdc-select-arrow:after {
       color: white;
     }
+
+    &#main-appbar {
+      button.mat-mdc-icon-button {
+        .mat-icon {
+          color: #00000099;
+        }
+      }
+      .mat-mdc-select-value, .mat-mdc-select-arrow, .mat-mdc-select-arrow:after {
+        color: #00000099;
+      }
+    }
+
+
     .mat-mdc-text-field-wrapper {
       &.mdc-text-field--outlined {
         &:not(.mdc-text-field--focused):not(.mdc-text-field--disabled):not(.mdc-text-field--invalid) {

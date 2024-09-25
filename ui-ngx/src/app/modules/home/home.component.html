@@ -35,7 +35,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <div fxLayout="column" role="main" style="height: 100%;">
-      <mat-toolbar fxLayout="row" color="primary" class="tb-primary-toolbar">
+      <mat-toolbar fxLayout="row" color="primary" class="tb-primary-toolbar" id="main-appbar">
         <button [fxShow]="!forceFullscreen" mat-icon-button id="main"
                 [ngClass]="{'tb-invisible': displaySearchMode()}"
                 fxHide.gt-sm (click)="sidenav.toggle()">
@@ -72,6 +72,7 @@
         <tb-notification-bell></tb-notification-bell>
         <tb-user-menu [displayUserInfo]="!displaySearchMode()"></tb-user-menu>
       </mat-toolbar>
+      <mat-divider></mat-divider>
       <mat-progress-bar color="warn" style="z-index: 10; margin-bottom: -4px; width: 100%;" mode="indeterminate"
                         *ngIf="!hideLoadingBar && (isLoading$ | async)">
       </mat-progress-bar>
