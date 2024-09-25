@@ -38,10 +38,19 @@
     transition-property: height;
 
     a.mat-mdc-button {
-      padding: 0 16px 0 32px;
-      font-weight: 500;
+      padding: 0 16px 0 57px;
       text-transform: none !important;
       text-rendering: optimizeLegibility;
+
+      &.mat-mdc-button-base {
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+      }
+    }
+
+    .mat-icon {
+      display: none;
     }
   }
 }
